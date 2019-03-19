@@ -1,0 +1,97 @@
+html, body, #app {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.NoteList {
+    max-width: 20rem;
+    width: 30rem;
+    background: #ffecfd;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+li {
+    padding: 1rem;
+    font-size: 1.25rem;
+    min-height: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+li:hover {
+    cursor: pointer;
+    background-color: #f5c5f4;
+}
+.active {
+    background-color: #e080da;
+}
+.active:hover {
+    background-color: #c15cb6;
+}
+.new-note {
+    background-color: #5d2359;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.new-note:hover {
+    background-color: #48183c;
+}
+		
+.note {
+    padding: 2rem;
+}
+.content, .title {
+    border-style: none;
+    border-radius: 0.25rem;
+    border: solid 1px lightgray;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.25rem;
+}
+.content:focus, .title:focus {
+    outline: 0;
+}
+.content {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    resize: vertical;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    height: 20rem;
+}
+.title {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+button {
+    border-style: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #c344c1;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ button:hover {
+    background-color: #a23696;
+}
